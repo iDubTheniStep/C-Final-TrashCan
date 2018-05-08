@@ -19,16 +19,12 @@ int main()
 {	
 	
 
+	PlaySound(TEXT("nooo.swf.wav"), NULL, SND_SYNC);
 
 
 	system("pause");
 	return 0;
 }
 
-void darthVader()
-{
-	PlaySound(TEXT("nooo.swf.wav"), NULL, SND_SYNC);
-
-}
 
 
