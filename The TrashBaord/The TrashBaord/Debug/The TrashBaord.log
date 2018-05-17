@@ -1,15 +1,14 @@
-﻿Build started 5/8/2018 9:45:10 AM.
-     1>Project "C:\Users\ar131512\Desktop\trash\C-Final-TrashCan\The TrashBaord\The TrashBaord\The TrashBaord.vcxproj" on node 2 (Build target(s)).
+﻿Build started 5/16/2018 12:13:02 PM.
+     1>Project "C:\Users\dp201524\Desktop\C++ FINAL\C-Final-TrashCan\The TrashBaord\The TrashBaord\The TrashBaord.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib MyForm.cpp
          MyForm.cpp
-     1>MyForm.cpp(4): error C2059: syntax error : 'namespace'
-     1>MyForm.cpp(4): error C2238: unexpected token(s) preceding ';'
-     1>MyForm.cpp(5): error C2059: syntax error : 'namespace'
-     1>MyForm.cpp(5): error C2238: unexpected token(s) preceding ';'
-     1>MyForm.cpp(17): fatal error C1075: end of file found before the left brace '{' at 'c:\users\ar131512\desktop\trash\c-final-trashcan\the trashbaord\the trashbaord\MyForm.h(16)' was matched
-     1>Done Building Project "C:\Users\ar131512\Desktop\trash\C-Final-TrashCan\The TrashBaord\The TrashBaord\The TrashBaord.vcxproj" (Build target(s)) -- FAILED.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\dp201524\Desktop\C++ FINAL\C-Final-TrashCan\The TrashBaord\Debug\The TrashBaord.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\TheTrashBaord.MyForm.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\dp201524\Desktop\C++ FINAL\C-Final-TrashCan\The TrashBaord\Debug\The TrashBaord.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"Main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\MyForm.obj
+         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         The TrashBaord.vcxproj -> C:\Users\dp201524\Desktop\C++ FINAL\C-Final-TrashCan\The TrashBaord\Debug\The TrashBaord.exe
+     1>Done Building Project "C:\Users\dp201524\Desktop\C++ FINAL\C-Final-TrashCan\The TrashBaord\The TrashBaord\The TrashBaord.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:00.32
+Time Elapsed 00:00:02.44
