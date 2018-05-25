@@ -1,4 +1,5 @@
 #pragma once
+#include "QUITER.h"
 #include <iostream>
 #include <random>
 #include <time.h>
@@ -8,9 +9,8 @@
 
 
 
-namespace TheTrashBaord {
 
-	int score;
+namespace TheTrashBaord {
 
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -22,8 +22,12 @@ namespace TheTrashBaord {
 	/// <summary>
 	/// Summary for MyForm
 	/// </summary>
+
+
+	
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
+
 	public:
 		MyForm(void)
 		{
@@ -37,6 +41,7 @@ namespace TheTrashBaord {
 		/// <summary>
 		/// Clean up any resources being used.
 		/// </summary>
+
 		~MyForm()
 		{
 			if (components)
@@ -44,7 +49,9 @@ namespace TheTrashBaord {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Button^  button1;
+	
+
+	private: System::Windows::Forms::Button^  button1; // makes form button
 	private: System::Windows::Forms::Button^  button2;
 	private: System::Windows::Forms::Button^  button3;
 	private: System::Windows::Forms::Button^  button4;
@@ -111,7 +118,7 @@ namespace TheTrashBaord {
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
-			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->button1 = (gcnew System::Windows::Forms::Button()); //initilize form button
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button4 = (gcnew System::Windows::Forms::Button());
@@ -163,13 +170,13 @@ namespace TheTrashBaord {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(12, 12);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(84, 69);
-			this->button1->TabIndex = 0;
-			this->button1->Text = L"NOoOoOoO";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
+			this->button1->Location = System::Drawing::Point(12, 12); //button location
+			this->button1->Name = L"button1"; //what to call button in code
+			this->button1->Size = System::Drawing::Size(84, 69); //button size
+			this->button1->TabIndex = 0; //sets button number
+			this->button1->Text = L"NOoOoOoO"; //text that is displayed on button
+			this->button1->UseVisualStyleBackColor = true; //background color
+			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click); //handles when button is clicked
 			// 
 			// button2
 			// 
@@ -403,10 +410,10 @@ namespace TheTrashBaord {
 			// button25
 			// 
 			this->button25->Location = System::Drawing::Point(12, 320);
-			this->button25->Name = L"66";
+			this->button25->Name = L"button25";
 			this->button25->Size = System::Drawing::Size(84, 69);
 			this->button25->TabIndex = 26;
-			this->button25->Text = L"button25";
+			this->button25->Text = L"66";
 			this->button25->UseVisualStyleBackColor = true;
 			this->button25->Click += gcnew System::EventHandler(this, &MyForm::button25_Click);
 			// 
@@ -416,7 +423,7 @@ namespace TheTrashBaord {
 			this->button26->Name = L"button26";
 			this->button26->Size = System::Drawing::Size(84, 69);
 			this->button26->TabIndex = 27;
-			this->button26->Text = L"button26";
+			this->button26->Text = L"dont play while door open";
 			this->button26->UseVisualStyleBackColor = true;
 			this->button26->Click += gcnew System::EventHandler(this, &MyForm::button26_Click);
 			// 
@@ -426,7 +433,7 @@ namespace TheTrashBaord {
 			this->button27->Name = L"button27";
 			this->button27->Size = System::Drawing::Size(84, 69);
 			this->button27->TabIndex = 28;
-			this->button27->Text = L"button27";
+			this->button27->Text = L"Falco1e";
 			this->button27->UseVisualStyleBackColor = true;
 			this->button27->Click += gcnew System::EventHandler(this, &MyForm::button27_Click);
 			// 
@@ -436,7 +443,7 @@ namespace TheTrashBaord {
 			this->button28->Name = L"button28";
 			this->button28->Size = System::Drawing::Size(84, 69);
 			this->button28->TabIndex = 29;
-			this->button28->Text = L"button28";
+			this->button28->Text = L"scream";
 			this->button28->UseVisualStyleBackColor = true;
 			this->button28->Click += gcnew System::EventHandler(this, &MyForm::button28_Click);
 			// 
@@ -446,7 +453,7 @@ namespace TheTrashBaord {
 			this->button29->Name = L"button29";
 			this->button29->Size = System::Drawing::Size(84, 69);
 			this->button29->TabIndex = 30;
-			this->button29->Text = L"button29";
+			this->button29->Text = L"DOUCHE";
 			this->button29->UseVisualStyleBackColor = true;
 			this->button29->Click += gcnew System::EventHandler(this, &MyForm::button29_Click);
 			// 
@@ -456,7 +463,7 @@ namespace TheTrashBaord {
 			this->button30->Name = L"button30";
 			this->button30->Size = System::Drawing::Size(84, 69);
 			this->button30->TabIndex = 31;
-			this->button30->Text = L"button30";
+			this->button30->Text = L"LI";
 			this->button30->UseVisualStyleBackColor = true;
 			this->button30->Click += gcnew System::EventHandler(this, &MyForm::button30_Click);
 			// 
@@ -466,7 +473,7 @@ namespace TheTrashBaord {
 			this->button31->Name = L"button31";
 			this->button31->Size = System::Drawing::Size(84, 69);
 			this->button31->TabIndex = 32;
-			this->button31->Text = L"button31";
+			this->button31->Text = L"victory";
 			this->button31->UseVisualStyleBackColor = true;
 			this->button31->Click += gcnew System::EventHandler(this, &MyForm::button31_Click);
 			// 
@@ -476,7 +483,7 @@ namespace TheTrashBaord {
 			this->button32->Name = L"button32";
 			this->button32->Size = System::Drawing::Size(84, 69);
 			this->button32->TabIndex = 33;
-			this->button32->Text = L"button32";
+			this->button32->Text = L"waka";
 			this->button32->UseVisualStyleBackColor = true;
 			this->button32->Click += gcnew System::EventHandler(this, &MyForm::button32_Click);
 			// 
@@ -486,7 +493,7 @@ namespace TheTrashBaord {
 			this->button33->Name = L"button33";
 			this->button33->Size = System::Drawing::Size(84, 69);
 			this->button33->TabIndex = 34;
-			this->button33->Text = L"button33";
+			this->button33->Text = L"wombo combo";
 			this->button33->UseVisualStyleBackColor = true;
 			this->button33->Click += gcnew System::EventHandler(this, &MyForm::button33_Click);
 			// 
@@ -496,7 +503,7 @@ namespace TheTrashBaord {
 			this->button34->Name = L"button34";
 			this->button34->Size = System::Drawing::Size(84, 69);
 			this->button34->TabIndex = 35;
-			this->button34->Text = L"button34";
+			this->button34->Text = L"yeahboiii";
 			this->button34->UseVisualStyleBackColor = true;
 			this->button34->Click += gcnew System::EventHandler(this, &MyForm::button34_Click);
 			// 
@@ -506,7 +513,7 @@ namespace TheTrashBaord {
 			this->button35->Name = L"button35";
 			this->button35->Size = System::Drawing::Size(84, 69);
 			this->button35->TabIndex = 36;
-			this->button35->Text = L"button35";
+			this->button35->Text = L"erro";
 			this->button35->UseVisualStyleBackColor = true;
 			this->button35->Click += gcnew System::EventHandler(this, &MyForm::button35_Click);
 			// 
@@ -516,7 +523,7 @@ namespace TheTrashBaord {
 			this->button36->Name = L"button36";
 			this->button36->Size = System::Drawing::Size(84, 69);
 			this->button36->TabIndex = 37;
-			this->button36->Text = L"button36";
+			this->button36->Text = L"jolly";
 			this->button36->UseVisualStyleBackColor = true;
 			this->button36->Click += gcnew System::EventHandler(this, &MyForm::button36_Click);
 			// 
@@ -526,7 +533,7 @@ namespace TheTrashBaord {
 			this->button37->Name = L"button37";
 			this->button37->Size = System::Drawing::Size(84, 69);
 			this->button37->TabIndex = 38;
-			this->button37->Text = L"button37";
+			this->button37->Text = L"GOD";
 			this->button37->UseVisualStyleBackColor = true;
 			this->button37->Click += gcnew System::EventHandler(this, &MyForm::button37_Click);
 			// 
@@ -536,7 +543,7 @@ namespace TheTrashBaord {
 			this->button38->Name = L"button38";
 			this->button38->Size = System::Drawing::Size(84, 69);
 			this->button38->TabIndex = 39;
-			this->button38->Text = L"button38";
+			this->button38->Text = L"HALO";
 			this->button38->UseVisualStyleBackColor = true;
 			this->button38->Click += gcnew System::EventHandler(this, &MyForm::button38_Click);
 			// 
@@ -546,7 +553,7 @@ namespace TheTrashBaord {
 			this->button39->Name = L"button39";
 			this->button39->Size = System::Drawing::Size(84, 69);
 			this->button39->TabIndex = 40;
-			this->button39->Text = L"button39";
+			this->button39->Text = L"Loud";
 			this->button39->UseVisualStyleBackColor = true;
 			this->button39->Click += gcnew System::EventHandler(this, &MyForm::button39_Click);
 			// 
@@ -556,7 +563,7 @@ namespace TheTrashBaord {
 			this->button40->Name = L"button40";
 			this->button40->Size = System::Drawing::Size(84, 69);
 			this->button40->TabIndex = 41;
-			this->button40->Text = L"button40";
+			this->button40->Text = L"eric";
 			this->button40->UseVisualStyleBackColor = true;
 			this->button40->Click += gcnew System::EventHandler(this, &MyForm::button40_Click);
 			// 
@@ -566,7 +573,7 @@ namespace TheTrashBaord {
 			this->button41->Name = L"button41";
 			this->button41->Size = System::Drawing::Size(84, 69);
 			this->button41->TabIndex = 42;
-			this->button41->Text = L"button41";
+			this->button41->Text = L"nani";
 			this->button41->UseVisualStyleBackColor = true;
 			this->button41->Click += gcnew System::EventHandler(this, &MyForm::button41_Click);
 			// 
@@ -576,7 +583,7 @@ namespace TheTrashBaord {
 			this->button42->Name = L"button42";
 			this->button42->Size = System::Drawing::Size(84, 69);
 			this->button42->TabIndex = 43;
-			this->button42->Text = L"button42";
+			this->button42->Text = L"khaaaaan";
 			this->button42->UseVisualStyleBackColor = true;
 			this->button42->Click += gcnew System::EventHandler(this, &MyForm::button42_Click);
 			// 
@@ -586,7 +593,7 @@ namespace TheTrashBaord {
 			this->button43->Name = L"button43";
 			this->button43->Size = System::Drawing::Size(84, 69);
 			this->button43->TabIndex = 44;
-			this->button43->Text = L"button43";
+			this->button43->Text = L"pikachu";
 			this->button43->UseVisualStyleBackColor = true;
 			this->button43->Click += gcnew System::EventHandler(this, &MyForm::button43_Click);
 			// 
@@ -596,7 +603,7 @@ namespace TheTrashBaord {
 			this->button44->Name = L"button44";
 			this->button44->Size = System::Drawing::Size(84, 69);
 			this->button44->TabIndex = 45;
-			this->button44->Text = L"button44";
+			this->button44->Text = L"barrelroll";
 			this->button44->UseVisualStyleBackColor = true;
 			this->button44->Click += gcnew System::EventHandler(this, &MyForm::button44_Click);
 			// 
@@ -606,7 +613,7 @@ namespace TheTrashBaord {
 			this->button45->Name = L"button45";
 			this->button45->Size = System::Drawing::Size(84, 69);
 			this->button45->TabIndex = 46;
-			this->button45->Text = L"button45";
+			this->button45->Text = L"wtfboom";
 			this->button45->UseVisualStyleBackColor = true;
 			this->button45->Click += gcnew System::EventHandler(this, &MyForm::button45_Click);
 			// 
@@ -616,7 +623,7 @@ namespace TheTrashBaord {
 			this->button46->Name = L"button46";
 			this->button46->Size = System::Drawing::Size(83, 69);
 			this->button46->TabIndex = 47;
-			this->button46->Text = L"button46";
+			this->button46->Text = L"rumble";
 			this->button46->UseVisualStyleBackColor = true;
 			this->button46->Click += gcnew System::EventHandler(this, &MyForm::button46_Click);
 			// 
@@ -647,8 +654,8 @@ namespace TheTrashBaord {
 			this->BackColor = System::Drawing::Color::Black;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(572, 633);
-			this->Controls->Add(this->button48);
+			this->ClientSize = System::Drawing::Size(572, 633); //form size
+			this->Controls->Add(this->button48); //adds button to form
 			this->Controls->Add(this->button47);
 			this->Controls->Add(this->button46);
 			this->Controls->Add(this->button45);
@@ -697,164 +704,218 @@ namespace TheTrashBaord {
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->ForeColor = System::Drawing::Color::Black;
-			this->Name = L"MyForm";
-			this->Text = L"The Trash Board";
+			this->Name = L"MyForm";//name of form
+			this->Text = L"The Trash Board"; //text that shows at the top of form
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
-#pragma comment(lib, "winmm.lib")
+#pragma comment(lib, "winmm.lib") //adds winmm libary
 
 	private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e)
 	{
 	}
 
-	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT("nooo.swf.wav"), NULL, SND_SYNC);
-				 score++;
+	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) //handles when button is clicked
+	{
+				 PlaySound(TEXT("nooo.swf.wav"), NULL, SND_SYNC); //finds sound file source
+
+
+
 	}
 	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("fuckoff.wav"), NULL, SND_SYNC);
+
+
 	}
 	private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
-				PlaySound(TEXT("9000.wav"), NULL, SND_SYNC);
+				 PlaySound(TEXT("9000.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("BOS.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button5_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("BRUH.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button6_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("combo.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button7_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("doh.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button8_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("finish.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button9_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("fitness.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button10_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("FP.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button11_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("nuke.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button12_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("oyd.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button13_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("snoop.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button14_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("smash.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button15_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("mr.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button16_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("listen.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button17_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("luvu.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button18_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("jc.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button19_Click(System::Object^  sender, System::EventArgs^  e) {
-				PlaySound(TEXT("sparta.wav"), NULL, SND_SYNC);
+				 PlaySound(TEXT("sparta.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button20_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("SS.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button21_Click(System::Object^  sender, System::EventArgs^  e) {
-				PlaySound(TEXT("srkn.wav"), NULL, SND_SYNC);
+				 PlaySound(TEXT("srkn.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button22_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("triple.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button23_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("troll.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button24_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("gc.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button25_Click(System::Object^  sender, System::EventArgs^  e) {
 				 PlaySound(TEXT("order.wav"), NULL, SND_SYNC);
+
 	}
 	private: System::Void button26_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button27_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button28_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button29_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button30_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button31_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button32_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button33_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button34_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button35_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button36_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button37_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button38_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button39_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button40_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button41_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button42_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button43_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button44_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button45_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button46_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button47_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
-	}
-	private: System::Void button48_Click(System::Object^  sender, System::EventArgs^  e) {
-				 PlaySound(TEXT(""), NULL, SND_SYNC);
+				 PlaySound(TEXT("retard-alert.wav"), NULL, SND_SYNC);
+
 	}
 
-};
-}
+	private: System::Void button27_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("falco1e.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button28_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("roblox-screaming-kid-140.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button29_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("the-biggest-douche-in-the-universe3_1.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button30_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("the-lonely-island-jizz-in-my-pants_cut.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button31_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("victoryff.swf.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button32_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("wakawaka.swf.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button33_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("wombo-combo.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button34_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("yeahboi.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button35_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("erro.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button36_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("jolly.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button37_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("god.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button38_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("Halo.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button39_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("loud.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button40_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("eric.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button41_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("nani.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button42_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("wtf_boom.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button43_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("pikachu.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button44_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("barrelroll.swf.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button45_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("khaaan.swf.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button46_Click(System::Object^  sender, System::EventArgs^  e) {
+				 PlaySound(TEXT("rumble.wav"), NULL, SND_SYNC);
+
+	}
+	private: System::Void button47_Click(System::Object^  sender, System::EventArgs^  e) {
+
+	}
+	private: System::Void button48_Click(System::Object^  sender, System::EventArgs^  e) {
+				 QUITER ^ form = gcnew QUITER; // creates quitter form
+				 form->ShowDialog(); //opens quiter form
+
+
+	}
+	}
+
+	; }
+	
