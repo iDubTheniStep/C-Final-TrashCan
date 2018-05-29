@@ -8,6 +8,8 @@ using namespace System::Windows::Forms;
 [STAThread]
 void Main(array<String^>^ args)
 {
+	// shows form bois
+
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
 
